@@ -28,7 +28,6 @@ PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -
 ```
 Интерфейс *eth0* в качестве примера.
 
-Если __НЕ__ нужно заворачивать весь трафик через сервер, то настраивать форвардинг не нужно.
 Настраиваем IP-Forwarding
 ```sh
 echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
